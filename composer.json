@@ -1,0 +1,33 @@
+{
+    "name": "pstldz/dcat-admin-grid-sotrable",
+    "alias": "",
+    "description": "Description...",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension", "grid-sortable"],
+    "homepage": "https://github.com/pstldz/dcat-admin-grid-sotrable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pstldz",
+            "email": "1170525100@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0",
+        "spatie/eloquent-sortable": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pstldz\\DcatAdminGridSotrable\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Pstldz\\DcatAdminGridSotrable\\DcatAdminGridSotrableServiceProvider",
+        "laravel": {
+            "providers": [
+                "Pstldz\\DcatAdminGridSotrable\\DcatAdminGridSotrableServiceProvider"
+            ]
+        }
+    }
+}
