@@ -48,7 +48,3 @@ $grid = new Grid(new MyModel());
 $grid->sortable('order_column');
 ```
 
-
-License
-------------
-Licensed under [The MIT License (MIT)](LICENSE).
