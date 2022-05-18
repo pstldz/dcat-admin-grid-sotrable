@@ -12,7 +12,7 @@ class CancelSaveButton extends AbstractTool
 
     public function title()
     {
-        return DcatAdminGridSotrableServiceProvider::trans('sortable.cancel_save_order');
+        return admin_trans('sortable.cancel_save_order');
     }
 
     public function html()
@@ -26,7 +26,7 @@ HTML;
 
     public function handle(Request $request)
     {
-        $message = DcatAdminGridSotrableServiceProvider::trans('sortable.save_cancel');
+        $message = admin_trans('sortable.save_cancel');
         return $this->response()->success($message)->refresh();
     }
 }

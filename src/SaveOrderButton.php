@@ -11,7 +11,7 @@ class SaveOrderButton extends AbstractTool
 {
     protected $sortColumn;
 
-    protected $style = 'btn btn-primary btn-custom grid-save-order-btn';
+    protected $style = 'btn btn-primary btn-custom grid-save-order-btn grid-save-order-confirm-btn';
 
     public function __construct($column=null,Request $request=null)
     {
@@ -24,17 +24,17 @@ class SaveOrderButton extends AbstractTool
 
     public function title()
     {
-        return DcatAdminGridSotrableServiceProvider::trans('sortable.save_order');
+        return admin_trans('sortable.save_order');
     }
 
     public function handle(Request $request)
     {
         $status = true;
         $column = $request->post('_column');
-        $message = DcatAdminGridSotrableServiceProvider::trans('sortable.save_succeeded');
+        $message = admin_trans('sortable.save_succeeded');
         $repository = $request->post('_model');
 
-        $sorts = $request->post('sort');
+        $sorts = $request->post('_sort');
         $sorts = collect($sorts)
             ->pluck('key')
             ->combine(

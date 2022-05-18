@@ -17,11 +17,11 @@ new Sortable($("#{$id} tbody")[0], {
     handle: '.grid-sortable-handle', // handle's class
     animation: 150,
     onUpdate: function () {
-        var sorts = [], tb = $('#{$id}');
+        var _sorts = [], tb = $('#{$id}');
         tb.find('.grid-sortable-handle').each(function () {
-            sorts.push($(this).data());
+            _sorts.push($(this).data());
         });
-        tb.closest('.row').first().find('.grid-save-order-btn').data('sort', sorts).show();
+        tb.closest('.row').first().find('.grid-save-order-btn').data('_sort', _sorts).show();
     },
 });
 JS;

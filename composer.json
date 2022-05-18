@@ -1,7 +1,7 @@
 {
     "name": "pstldz/dcat-admin-grid-sotrable",
     "alias": "",
-    "description": "Description...",
+    "description": "拖动排序",
     "type": "library",
     "keywords": ["dcat-admin", "extension", "grid-sortable"],
     "homepage": "https://github.com/pstldz/dcat-admin-grid-sotrable",
