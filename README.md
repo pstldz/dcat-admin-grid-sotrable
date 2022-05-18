@@ -53,7 +53,7 @@ $grid = new Grid(new MyModel());
 $grid->sortable('order_column');
 ```
 
-##翻译
+## 翻译
 对应语言目录下新建`sortable.php` ,或者直接在 `global.php` 添加以下内容
 ```php
 return [
